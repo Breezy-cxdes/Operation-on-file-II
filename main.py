@@ -8,3 +8,12 @@ with open("breezy.txt","r") as file:
       word=line.split()
       print(word)
 file.close()
+
+new_file=open("snow.txt","x")
+new_file.close()
+import os
+ 
+if os.path.exists("newfile.txt"):
+    os.remove("my file.txt")
+else:
+    print("the file does not exist")
